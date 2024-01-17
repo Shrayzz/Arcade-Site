@@ -1,0 +1,535 @@
+/*
+
+    +----------------------------+
+    |        Style Accueil       |
+    +----------------------------+
+
+*/
+
+/* Définition des polices */
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('./fonts/AvenirBlack.ttf');
+}
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('./fonts/AvenirHeavy.ttf');
+}
+@font-face {
+    font-family: 'ARCADECLASSIC';
+    src: url('./fonts/ARCADECLASSIC.ttf');
+}
+
+/* Animations des titres pricipaux */
+@keyframes titres1 {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes titres2 {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Paramètres prédéfinis */
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+h3 {
+    font-family: 'Avenir-Heavy';
+    color: aliceblue;
+    font-size: 65px;
+}
+h4 {
+    font-family: 'Avenir-Heavy';
+    color: aliceblue;
+}
+li {
+    font-family: 'Avenir-Heavy';
+}
+
+/* 1ère partie : Titre et description */
+.titre {
+    font-family: 'ARCADECLASSIC';
+    display: inline-block;
+    position: absolute;
+    left: 7%;
+    top: 16%;        
+    text-align: center;
+    font-size: 200px;
+    z-index: 1;
+    color: aliceblue;
+
+    animation: titres1 2s ease forwards; 
+}
+.descTitre {
+    font-family: 'Avenir-Black';
+    display: inline;
+    position: absolute;
+    text-align: center;
+    top: 44.5%; 
+    left: 7.5%;
+    transform: translateX(-50%); 
+    font-size: 80px;
+    z-index: 1;
+    color: aliceblue;
+
+    animation: titres1 3s ease-in-out forwards; 
+}
+
+/* Première vidéo */
+#arcade {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1; 
+    color: white;
+}
+
+/* Boutons générés sur la droite */
+.intro1, .intro2, .intro3 {
+    text-decoration-line: none;
+    position: absolute;
+}
+.intro1 {
+    top: 23%;
+    right: 8%;
+}
+.intro2 {
+    top: 45%;
+    right: 8%;
+}
+.intro3 {
+    top: 67%;
+    right: 8%;
+}
+
+/* Boutons */
+@keyframes button1 {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn1, .btn2, .btn3, .btn1:visited, .btn2:visited, .btn3:visited {
+    font-family: 'Avenir-Heavy';
+    width: 11em;
+    height: 2.9em;
+    margin: 0.5em;
+    background: rgb(0, 0, 0);
+    color: aliceblue;
+    border: solid aliceblue 4px;
+    border-radius: 0.625em;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+
+   button:hover {
+    color: black;
+   }
+
+   button:after {
+    content: "";
+    background: aliceblue;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+.btn1 {
+    animation: button1 2s ease-in-out;
+}
+.btn2 {
+    animation: button1 3s ease-in-out;
+}
+.btn3 {
+    animation: button1 4s ease-in-out;
+}
+
+/* Images en forme d'ovales, pour délimiter les différentes parties de la page */
+.ovale2 {
+    display: block;
+    position: absolute;
+    top: 48%;
+    overflow-x: hidden;
+    max-width: 100%;
+    z-index: 0;
+}
+.ovale3 {
+    /* background-color: aqua; */
+    z-index: -1;
+    position: absolute;
+    top: 165%;
+}
+.ovale4 {
+    display: block;
+    position: absolute;
+    bottom: -332%;
+    overflow-x: hidden;
+    max-width: 100%;
+    z-index: -2;
+}
+
+/* 2ème Partie : Chronologie et type */
+.h3part2 {
+    position: absolute;
+    top: 110%;
+    right: 2.5%;
+    text-align: right;
+
+    animation: titres1 3.5s ease-in-out;
+}
+
+/* Création de tous les rectangles (colorés et noircis) avec border radius */
+@-webkit-keyframes AnimatePolygon {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+@keyframes AnimatePolygon {
+    0% {
+      background-position: 0% 70%;
+    }
+    50% {
+      background-position: 100% 20%;
+    }
+    100% {
+      background-position: 0% 70%;
+    }
+}
+
+.polygon1, .polygon2, .polygon3, .polygon4 {
+    position: absolute;
+    display: flex;
+    width: 20%;
+    height: 500px;
+    border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    content: '';
+    border: solid aliceblue 5px;
+}
+
+.polygon5, .polygon6, .polygon7, .polygon8 {
+    position: absolute;
+    display: flex;
+    width: 17%;
+    height: 450px;
+    border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    content: '';
+    background-color: rgb(93, 93, 93);
+    opacity: 0.25;
+    box-shadow: inset black 3px 2px 10px 3px;
+}
+
+.polygon1 {
+    top: 160%;
+    left: 4%;
+    background-image: linear-gradient(-70deg, hsl(324, 70%, 45%) 20%, hsl(360, 65%, 45%) 50%, hsl( 36, 80%, 45%) 80%);
+    animation: AnimatePolygon 8s ease infinite;
+    -webkit-animation: AnimatePolygon 8s ease infinite;
+    
+}
+.polygon2 {
+    top: 160%;
+    left: 28%;
+    background-image: linear-gradient(-70deg, hsl( 72, 75%, 35%) 20%, hsl(108, 65%, 35%) 50%, hsl(144, 75%, 35%) 80%);
+    animation: AnimatePolygon 8s ease infinite;
+    -webkit-animation: AnimatePolygon 8s ease infinite;
+}
+.polygon3 {
+    top: 160%;
+    left: 52%;
+    background-image: linear-gradient(-70deg, hsl(180, 75%, 35%) 20%, hsl(216, 60%, 45%) 50%, hsl(252, 65%, 50%) 80%);
+    animation: AnimatePolygon 8s ease infinite;
+    -webkit-animation: AnimatePolygon 8s ease infinite;
+}
+.polygon4 {
+    top: 160%;
+    left: 76%;
+    background-image: linear-gradient(-70deg, hsl(37, 87%, 50%) 10%, hsl(47, 90%, 55%) 50%, hsl(76, 83%, 49%) 90%);
+    animation: AnimatePolygon 8s ease infinite;
+    -webkit-animation: AnimatePolygon 8s ease infinite;
+}
+
+.polygon5 {top: 163%;left: 5.5%;}
+
+.polygon6 {top: 163%;left: 29.6%;}
+
+.polygon7 {top: 163%;left: 53.5%;}
+
+.polygon8 {top: 163%;left: 77.5%;}
+
+/* Implantation et animation des images des rectangles */
+@keyframes shakeBox1 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    10% { transform: translate(0, 0) rotate(6deg); }
+    25% { transform: translate(5px, 5px) rotate(3deg); }
+    40% { transform: translate(5px, 5px) rotate(-2deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-3deg); }
+    85% { transform: translate(-5px, 5px) rotate(6deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+@keyframes shakeBox2 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    10% { transform: translate(0, 0) rotate(3deg); }
+    25% { transform: translate(5px, 5px) rotate(0deg); }
+    40% { transform: translate(5px, 5px) rotate(6deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-2deg); }
+    85% { transform: translate(-5px, 5px) rotate(3deg); }
+    100% { transform: translate(0, 0) rotate(1deg); }
+}
+@keyframes shakeBox3 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    10% { transform: translate(0, 0) rotate(2deg); }
+    25% { transform: translate(5px, 5px) rotate(-4deg); }
+    40% { transform: translate(5px, 5px) rotate(-2deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-3deg); }
+    85% { transform: translate(-5px, 5px) rotate(6deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+@keyframes shakeBox4 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    10% { transform: translate(0, 0) rotate(6deg); }
+    25% { transform: translate(5px, 5px) rotate(3deg); }
+    40% { transform: translate(5px, 5px) rotate(0deg); }
+    50% { transform: translate(0, 0) rotate(-2eg); }
+    75% { transform: translate(-5px, 5px) rotate(3deg); }
+    85% { transform: translate(-5px, 5px) rotate(6deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.borne-arcade {
+    position: absolute;
+    top: 161%;
+    left: -0.3%;
+    width: 28%;
+    animation: shakeBox1 15s infinite ease;
+}
+.flipper {
+    position: absolute;
+    top: 159.2%;
+    left: 25.8%;
+    width: 24.5%;
+    animation: shakeBox3 15s infinite ease;
+}
+.course {
+    position: absolute;
+    top: 162%;
+    left: 48%;
+    width: 28%;
+    animation: shakeBox4 15s infinite ease;
+}
+.tir {
+    position: absolute;
+    top: 155.5%;
+    left: 72%;
+    width: 27%;
+    animation: shakeBox2 15s infinite ease;
+}
+
+/* 3ème Partie : Définitions et anecdotes */
+/* Titre en id car redirection dessus à partir d'un bouton */
+#Definition {
+    position: absolute;
+    top: 230%;
+    left: 2.5%;
+    text-align: left;
+
+    animation: titres2 3.5s ease-in-out;
+}
+
+.salle {
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 2200px;
+} 
+.salle {z-index: -4;} 
+
+/* Contenu des définitions */
+.paragraphe1 {
+    position: absolute;
+    text-align: justify;
+    left: 4%;
+    top: 276.5%;
+    font-size: 32px;
+    color: aliceblue;
+    z-index: 2;
+}
+.paragraphe2 {
+    position: absolute;
+    left: 47%;
+    top: 336.8%;
+    font-size: 32px;
+    color: aliceblue;
+    z-index: 2;
+}
+
+/* Rectangles derriere le contenu */
+.polygonPara1, .polygonPara2 {
+    position: absolute;
+    display: flex;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    content: '';
+    background-color: #232323;
+    opacity: 0.5;
+    border: solid aliceblue 5px;
+    box-shadow: black 3px 3px 10px 3px;
+    z-index: -1;
+}
+
+.polygonPara1 {
+    top: 273.8%;
+    left: 0.5%;
+    width: 58%;
+    height: 450px;
+}
+.polygonPara2 {
+    top: 333.5%;
+    left: 44%;
+    width: 55%;
+    height: 405px;
+}
+
+/* Images reliés au visuel des contenus */
+.imgSalle1, .imgSalle2 {
+    position: absolute;
+    border: aliceblue solid 3px;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+    box-shadow: black 5px 2px 10px 3px;
+}
+
+.imgSalle1 {
+    width: 30%;
+    top: 278%;
+    left: 63%;
+    rotate: 2deg;
+}
+.imgSalle2 {
+    width: 28%;
+    top: 335.5%;
+    left: 8%;
+    rotate: -2deg;
+}
+
+/* 4ème Partie: Outro de la page d'accueil */
+.h3Visu {
+    position:absolute;
+    top: 404%;
+    left: 3.5%;
+
+    animation: titres1 3.5s ease-in-out;
+}
+#visu {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 380%;
+    z-index: -4; 
+    color: white;
+}
+
+.btn4, .btn5, .btn4:visited, .btn5:visited {
+    font-family: 'Avenir-Heavy';
+    width: 11em;
+    height: 4em;
+    margin: 0.5em;
+    background: rgb(0, 0, 0);
+    color: aliceblue;
+    border: solid aliceblue 4px;
+    border-radius: 0.625em;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+   }
+
+   button:hover {
+    color: black;
+   }
+
+   button:after {
+    content: "";
+    background: aliceblue;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+
+   button:hover:after {
+    transform: skewX(45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+.btn4 {
+    left: 60%;
+    top: 405%;
+    animation: button1 2s ease-in-out;
+}
+
+.btn5 {
+    left: 60%;
+    top: 435%;
+    animation: button1 3s ease-in-out;
+}

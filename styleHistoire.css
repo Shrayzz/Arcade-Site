@@ -1,0 +1,731 @@
+
+
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('./fonts/AvenirBlack.ttf');
+}
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('./fonts/AvenirHeavy.ttf');
+}
+@font-face {
+    font-family: 'ARCADECLASSIC';
+    src: url('./fonts/ARCADECLASSIC.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+hr {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    z-index: 10;
+    opacity: 0.2;
+}
+
+#gradient-1 {
+    position: absolute;
+    top: 55%;
+    width: 150%;
+    height: 1107vh;
+    z-index: -999;
+    opacity: 0.8;
+}
+
+#histoireIntro {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1; 
+    color: white;
+    rotate: 180deg;
+    opacity: 0.4;
+}
+
+main h2 {
+    font-family: 'Avenir-Black';
+    font-size: 110px;
+    color: aliceblue;
+}
+
+main h3 {
+    font-family: 'Avenir-heavy';
+    font-size: 45px;
+    color: aliceblue;
+}
+
+main h6 {
+    font-family: 'Avenir-Heavy';
+    font-size: 20px;
+    color: aliceblue;
+}
+
+main p {
+    font-family: 'Avenir-Heavy';
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.titre {
+    font-family: 'ARCADECLASSIC';
+    display: flex;
+    position: absolute;
+    top: 18%;        
+    left: 7.7%;
+    font-size: 140px;
+    z-index: 1;
+    color: aliceblue;
+
+    animation: titres1 2s ease forwards; 
+}
+
+/* .polygonParaTitre {
+    position: absolute;
+    top: 42%;
+    left: 1%;
+    display: flex;
+    width: 98%;
+    height: 49%;
+    border-radius: 2% 2% 2% 2% / 10% 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    content: '';
+    background-color: #0c0c0c;
+    opacity: 0.5;
+    border: solid aliceblue 5px;
+    box-shadow: black 3px 3px 10px 3px;
+    z-index: -1;
+}  */
+
+.descTitre {
+    position: absolute;
+    top: 44%;
+    left: 3%;
+    right: 3%;
+    text-align: justify;
+}
+.descTitre2 {
+    position: absolute;
+    top: 72%;
+    left: 3%;
+    right: 3%;
+    text-align: justify;
+}
+
+.ovale1  {
+    display: block;
+    position: absolute;
+    top: 52%;
+    overflow-x: hidden;
+    max-width: 110%;
+    z-index: 0;
+
+}
+
+.Titre1958 {
+    position: absolute;
+    top: 105%;
+    left: 5%;
+}
+.Desc1958 {
+    position: absolute;
+    text-align: justify;
+    top: 128%;
+    left: 3%;
+}
+.Desc1958-2 {
+    position: absolute;
+    text-align: justify;
+    top: 158%;
+    right: 5%;
+    left: 40%;
+}
+.Desc1958-3 {
+    position: absolute;
+    text-align: justify;
+    top: 181%;
+    right: 5%;
+    left: 40%;
+}
+
+.tennis-for-two {
+    position: absolute;
+    display: flex;
+    top: 114%;
+    left: 65%;
+    width: 28%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+
+.tennis-osci {
+    position: absolute;
+    display: flex;
+    top: 155%;
+    right: 65%;
+    width: 28%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+
+.visuJeuTennis {
+    position: absolute;
+    top: 151%;
+    right: 12.2%;
+}
+
+.tennisVideo {
+    position: absolute;
+    top: 190%;
+    left: 5%;
+    border: solid 2px aliceblue;
+}
+
+.reprodTennis {
+    position: absolute;
+    top: 200%;
+    left: 9.7%;
+}
+
+.hr1 {
+    top: 207%;
+}
+
+.TitreA1970 {
+    position: absolute;
+    top: 210%;
+    left: 5%;
+}
+
+.DescA1970 {
+    position: absolute;
+    text-align: justify;
+    top: 233%;
+    left: 3%;
+    right: 40%;
+}
+
+.space-invaders-image {
+    position: absolute;
+    top: 235%;
+    left: 63%;
+    width: 30%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+
+.space-invH6 {
+    position: absolute;
+    top: 271%;
+    left: 73.5%;
+}
+
+.pong-game-image {
+    position: absolute;
+    top: 282%;
+    right: 65%;
+    width: 30%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+
+.pongH6 {
+    position: absolute;
+    top: 330%;
+    right: 77%;
+}
+
+.DescA1970-2 {
+    position: absolute;
+    text-align: justify;
+    top: 285%;
+    right: 7%;
+    left: 39%;
+}
+
+.DescA1970-3 {
+    position: absolute;
+    text-align: justify;
+    top: 340%;
+    left: 24%;
+    text-decoration: underline;
+}
+
+#space-inv {
+    position: absolute;
+    top: 350%;
+    left: 15%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+
+#pong {
+    position: absolute;
+    top: 350%;
+    right: 15%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+
+.hr2 {
+    top: 396%;
+}
+
+.Titre1972 {
+    position: absolute;
+    top: 400%;
+    left: 5%;
+}
+
+.Desc1972 {
+    position: absolute;
+    text-align: justify;
+    top: 427%;
+    left: 3%;
+    right: 40%;
+}
+
+.Desc1972-2 {
+    position: absolute;
+    text-align: justify;
+    top: 462%;
+    left: 3%;
+    right: 40%;
+}
+
+.atari-logo {
+    position: absolute;
+    top: 423%;
+    right: 6%;
+    width: 27%;
+    border: solid 0.5px aliceblue;
+}
+.atari-desc {
+    position: absolute;
+    top: 437%;
+    right: 15.5%;
+}
+
+.magnavox {
+    position: absolute;
+    top: 443%;
+    right: 6%;
+    width: 27%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+.magnavox-desc {
+    position: absolute;
+    top: 483.5%;
+    right: 13%;
+}
+
+.hr3 {
+    top: 493%;
+}
+
+.Titre1978 {
+    position: absolute;
+    top: 498%;
+    left: 5%;
+}
+
+.Desc1978 {
+    position: absolute;
+    text-align: justify;
+    top: 522%;
+    right: 3%;
+    left: 40%;
+}
+
+.Desc1978-2 {
+    position: absolute;
+    text-align: justify;
+    top: 551%;
+    right: 3%;
+    left: 40%;
+}
+
+#Asteroids {
+    position: absolute;
+    top: 520%;
+    left: 3%;
+    right: 40%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+
+.asteroids-desc {
+    position: absolute;
+    top: 558.5%;
+    left: 13.7%;
+    right: 40%;
+}
+
+.Fairchild {
+    position: absolute;
+    top: 566%;
+    left: 3%;
+    width: 16%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+.fairchild-desc {
+    position: absolute;
+    top: 589.5%;
+    left: 5.5%;
+}
+
+.Atari2600 {
+    position: absolute;
+    top: 567%;
+    left: 20%;
+    width: 16%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+.atari2600-desc {
+    position: absolute;
+    top: 589.5%;
+    left: 25%;
+}
+
+.hr4 {
+    top: 600%;
+}
+
+#TitreA1980 {
+    position: absolute;
+    text-align: left;
+    top: 606%;
+    left: 4%;
+}
+
+.DescA1980 {
+    position: absolute;
+    text-align: justify;
+    top: 627%;
+    left: 5%;
+    right: 5%;
+}
+
+.pacman {
+    position: absolute;
+    top: 660%;
+    left: 7%;
+    width: 25%;
+    height: 58%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+    padding: 1%;
+}
+.pacmanDesc {
+    position: absolute;
+    top: 721%;
+    left: 14.2%;
+    font-size: 150%;
+}
+
+.dk {
+    position: absolute;
+    top: 660%;
+    left: 37%;
+    width: 25%;
+    height: 58%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+    padding: 1%;
+}
+.dkDesc {
+    position: absolute;
+    top: 721%;
+    left: 42.5%;
+    font-size: 150%;
+}
+
+.galaga {
+    position: absolute;
+    top: 660%;
+    right: 7%;
+    width: 25%;
+    height: 58%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+    padding: 1%;
+}
+.galagaDesc {
+    position: absolute;
+    top: 721%;
+    left: 76%;
+    font-size: 150%;
+}
+
+.DescA1980-2 {
+    position: absolute;
+    text-align: justify;
+    top: 733%;
+    left: 5%;
+    right: 45%;
+}
+.DescA1980-3 {
+    position: absolute;
+    text-align: justify;
+    top: 785%;
+    left: 5%;
+    right: 45%;
+}
+
+.lamp {
+    position: absolute;
+    width: 30%;
+    top: 735%;
+    left: 62%;
+    right: 5%;
+    z-index: -200;
+    border: solid 1px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+.joke {
+    position: absolute;
+    top: 763%;
+    left: 70.5%;
+    right: 5%;
+    color: red;
+    opacity: 0.3;
+}
+
+.station {
+    position: absolute;
+    width: 25%;
+    top: 780%;
+    left: 68%;
+    right: 5%;
+    rotate: 4deg;
+    z-index: 3;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+.marche {
+    position: absolute;
+    width: 25%;
+    top: 785%;
+    left: 63%;
+    right: 5%;
+    rotate: -3deg;
+    z-index: 2;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+.marche:hover {
+    z-index: 999;
+}
+.arcadeSalle {
+    position: absolute;
+    width: 30%;
+    top: 790%;
+    left: 66%;
+    right: 5%;
+    rotate: 4deg;
+    z-index: 1;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+.arcadeSalle:hover {
+    z-index: 999;
+}
+.DescA1980-4 {
+    position: absolute;
+    text-align: justify;
+    top: 837%;
+    left: 5%;
+    right: 5%;
+}
+
+.hr5 {
+    top: 873%;
+}
+
+.TitreA1990 {
+    position: absolute;
+    top: 880%;
+    left: 5%;
+}
+
+.DescA1990 {
+    position: absolute;
+    text-align: justify;
+    top: 905%;
+    left: 3%;
+    right: 45%;
+}
+
+.nes {
+    position: absolute;
+    text-align: justify;
+    top: 908%;
+    left: 58%;
+    right: 45%;
+    width: 18%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+.nesDesc {
+    position: absolute;
+    text-align: justify;
+    top: 937%;
+    left: 65.5%;
+    right: 45%;
+}
+
+.genesis {
+    position: absolute;
+    text-align: justify;
+    top: 905%;
+    left: 78%;
+    width: 16%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+}
+.genesisDesc {
+    position: absolute;
+    text-align: justify;
+    top: 940%;
+    left: 82.5%;
+}
+
+.DescA1990-2 {
+    position: absolute;
+    text-align: justify;
+    top: 955%;
+    right: 3%;
+    left: 45%;
+}
+
+.bistrot {
+    position: absolute;
+    text-align: justify;
+    top: 954%;
+    left: 2.5%;
+    width: 40%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}
+
+.hr6 {
+    top: 1011%;
+}
+
+.TitreAUJD {
+    position: absolute;
+    text-align: left;
+    top: 1020%;
+    left: 5%;
+}
+
+.DescAUJD {
+    position: absolute;
+    text-align: justify;
+    top: 1043%;
+    left: 3%;
+    right: 45%;
+}
+.DescAUJD-2 {
+    position: absolute;
+    text-align: justify;
+    top: 1098%;
+    left: 45%;
+    right: 3%;
+}
+
+.ps3 {
+    position: absolute;
+    width: 14%;
+    top: 1101%;
+    left: 4%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 8% 8% 8% 8%;
+    padding: 0.1%;
+}
+.nds {
+    position: absolute;
+    width: 12%;
+    top: 1100%;
+    left: 24%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+    padding: 0.1%;
+}
+.xbseries {
+    position: absolute;
+    width: 12%;
+    top: 1130%;
+    left: 5%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+    padding: 0.1%;
+}
+.megadrive {
+    position: absolute;
+    width: 12%;
+    top: 1134%;
+    left: 24%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 8% 8% 8% 8%;
+    padding: 0.1%;
+}
+
+.Descps3 {
+    position: absolute;
+    top: 1124%;
+    left: 8%;
+    color: aliceblue;
+    font-family: 'Avenir-Heavy';
+    font-size: 100%;
+}
+
+.Descnds {
+    position: absolute;
+    top: 1126%;
+    left: 27%;
+    color: aliceblue;
+    font-family: 'Avenir-Heavy';
+    font-size: 100%;
+}
+
+.Descxbs {
+    position: absolute;
+    top: 1155.5%;
+    left: 8%;
+    color: aliceblue;
+    font-family: 'Avenir-Heavy';
+    font-size: 100%;
+}
+
+.Descmgdr {
+    position: absolute;
+    top: 1152.7%;
+    left: 26.3%;
+    color: aliceblue;
+    font-family: 'Avenir-Heavy';
+    font-size: 100%;
+}
+
+.borne-asso {
+    position: absolute;
+    top: 1046%;
+    left: 60%;
+    width: 35%;
+    border: solid 3px aliceblue;
+    border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+}

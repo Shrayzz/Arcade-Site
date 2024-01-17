@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('./fonts/AvenirBlack.ttf');
+} 
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('./fonts/AvenirHeavy.ttf');
+}
+  @font-face {
+    font-family: 'ARCADECLASSIC';
+    src: url('./fonts/ARCADECLASSIC.TTF');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.titre {
+    font-family: 'ARCADECLASSIC';
+    font-size: 1000%;
+    text-align: left;
+    color: aliceblue;
+    text-shadow: 1px 1px 10px rgb(66, 188, 236), 0 0 1em blue, 0 0 0.2em blue;
+    
+    position: absolute;
+    top: 7%;
+    left: 41%;
+    z-index: 1;
+}
+
+#vaporwave video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;  
+    opacity: 0.5; 
+}
+
+.app {
+    position: absolute;
+    top: 33%;
+    left: 30%;
+    background: aliceblue;
+    width: 90%;
+    height: 50%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 3%;
+    opacity: 0.8;
+    z-index: 2;
+    border: solid 3px black;
+}
+
+#question {
+    font-family: 'Avenir-Black';
+    font-size: 150%;
+    z-index: 2;
+
+    position: absolute;
+    top: 35%;
+    left: 32%;
+}
+
+.btn1 button, .btn2 button, .btn3 button, .btn4 button {
+    background: aliceblue;
+    color: #222;
+    font-weight: 500;
+    width: 35%;
+    height: 8%;
+    border: solid 2px #222;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: crosshair;
+    transition: all 0.3s;
+    position: absolute;
+    left: 32.8%;
+    z-index: 4;
+    font-family: 'Avenir-Heavy';
+    font-size: 100%;
+}
+
+.btn1 button {
+    top: 41%; 
+}
+.btn2 button {
+    top: 52%; 
+}
+.btn3 button {
+    top: 63%; 
+}
+.btn4 button {
+    top: 74%; 
+}
+
+.btn1:hover:not([disabled]) button, .btn2:hover button, .btn3:hover button, .btn4:hover button {
+    background: #222;
+    color: aliceblue;
+}
+.btn1:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    --color: 22, 252, 53;
+    border-radius: .5em;
+    transition: .3s;
+    background-color: rgb(2, 170, 25);
+    color: rgb(var(--color));
+    fill: rgb(var(--color));
+    font-family: 'Avenir-Black';
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border: 2px solid rgb(var(--color));
+    box-shadow: 0 0 10px rgba(var(--color), .4);
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: .5em 1em;
+
+    position: absolute;
+    top: 85.5%;
+    left: 46.8%;
+    z-index: 4;
+  }
+  
+  #next-btn:hover {
+    box-shadow: 0 0 0 5px rgba(var(--color), .5);
+  }
+  
+  #next-btn span {
+    transform: scale(.8);
+    transition: .3s;
+  }
+  
+  #next-btn:hover span {
+    transform: scale(1);
+  }
+  
+  #next-btn svg {
+    font-size: 0;
+    transform: scale(0.5) translateX(0%) rotate(-180deg);
+    transition: .3s;
+  }
+  
+  #next-btn:hover svg {
+    font-size: 20px;
+    transform: scale(1) translateX(20%) rotate(0deg);
+  }
+  
+  #next-btn:active {
+    transition: 0s;
+    box-shadow: 0 0 0 5px rgb(var(--color));
+  }
+
+  .correct {
+    background: rgb(14, 211, 30);
+  }
+  .incorrect {
+    background: rgb(211, 14, 14);
+  }

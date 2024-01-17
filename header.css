@@ -1,0 +1,206 @@
+
+/* Gamme de couleurs : */
+
+/*
+@keyframes wheelHueColor {
+    from, to { color: hsl(324, 70%, 45%); }
+    10%      { color: hsl(360, 65%, 45%); }
+    20%      { color: hsl( 36, 80%, 45%); }
+    30%      { color: hsl( 72, 75%, 35%); }
+    40%      { color: hsl(108, 65%, 35%); }
+    50%      { color: hsl(144, 75%, 35%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 60%, 45%); }
+    80%      { color: hsl(252, 65%, 50%); }
+    90%      { color: hsl(288, 60%, 40%); }
+} */
+
+/*
+
+    +----------------------------+
+    |        Début Header        |
+    +----------------------------+
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes accueilColor {
+    from, to {color : hsl(1, 82%, 47%)}
+    40%      {color : hsl(1, 84%, 34%)}
+    90%      {color : hsl(1, 85%, 29%)}
+}
+@keyframes histoireColor {
+    from, to {color : hsl(32, 82%, 47%)}
+    40%      {color : hsl(34, 95%, 34%)}
+    90%      {color : hsl(34, 94%, 26%)}
+}
+@keyframes collectionsColor {
+    from, to {color : hsl(58, 82%, 47%)}
+    40%      {color : hsl(58, 91%, 35%)}
+    90%      {color : hsl(58, 90%, 23%)}
+}
+@keyframes visualisationsColor {
+    from, to {color : hsl(112, 82%, 47%)}
+    40%      {color : hsl(112, 89%, 31%)}
+    90%      {color : hsl(112, 93%, 21%)}
+}
+@keyframes aproposColor {
+    from, to {color : hsl(183, 82%, 47%)}
+    40%      {color : hsl(206, 84%, 34%)}
+    90%      {color : hsl(219, 85%, 29%)}
+}
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('./fonts/AvenirHeavy.ttf');
+}
+
+
+/* --------------------------------------- */
+
+
+header {
+    font-family: 'Avenir-Heavy';
+    font-size: 1.8em;
+    background-image: url('./images/dark-texture.jpg');
+    z-index: 3;
+    
+    position: relative;
+    width: 100%;
+}
+
+.header1 {
+    position: relative;
+    text-decoration: none;
+    padding: 2px 0;
+    animation: accueilColor 2s infinite;
+}
+.header1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background: rgb(128, 0, 0);
+    transition: width 500ms ease;
+    animation: inherit;
+}  
+.header1:hover:after {
+    width: 100%;
+}
+
+/* --- */
+
+.header2 {
+    position: relative;
+    text-decoration: none;
+    padding: 2px 0;
+    animation: histoireColor 2s infinite;
+}
+.header2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background: rgb(174, 106, 3);
+    transition: width 500ms ease;
+    animation: inherit;
+}  
+.header2:hover:after {
+    width: 100%;
+}
+
+/* --- */ 
+
+.header3 {
+    position: relative;
+    text-decoration: none;
+    padding: 2px 0;
+    animation: collectionsColor 2s infinite;
+}
+.header3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background: rgb(174, 171, 3);
+    transition: width 500ms ease;
+    animation: inherit;
+}  
+.header3:hover:after {
+    width: 100%;
+}
+
+/* --- */ 
+
+.header4 {
+    position: relative;
+    text-decoration: none;
+    padding: 2px 0;
+    animation: visualisationsColor 2s infinite;
+}
+.header4:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background: rgb(3, 174, 14);
+    transition: width 500ms ease;
+    animation: inherit;
+}  
+.header4:hover:after {
+    width: 100%;
+}
+
+/* --- */ 
+
+.header5 {
+    position: relative;
+    text-decoration: none;
+    padding: 2px 0;
+    animation: aproposColor 2s infinite;
+}
+.header5:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background: rgb(3, 97, 174);
+    transition: width 500ms ease;
+    animation: inherit;
+}  
+.header5:hover:after {
+    width: 100%;
+}
+
+/* --------------------------------------- */
+
+.ulHeader {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 95px;
+}
+
+.darkTexture {
+    display: flex;
+    background-size: cover;
+    background-image: center;
+    align-content: center;
+}

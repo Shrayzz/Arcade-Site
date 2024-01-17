@@ -1,0 +1,871 @@
+/* ? Mis à jour, je m'occupe du Coming Soon */
+/* ? Il y a des choses à ajouter, tktp je sais quoi */
+/* ? Le coming soon sera supprimé */
+
+@font-face {
+  font-family: 'Avenir-Black';
+  src: url('./fonts/AvenirBlack.ttf');
+}
+
+@font-face {
+  font-family: 'ARCADECLASSIC';
+  src: url('./fonts/ARCADECLASSIC.TTF');
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+
+.titre {
+  font-family: 'ARCADECLASSIC';
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 51%;
+  transform: translateX(-50%);
+  font-size: 900%;
+  z-index: 1;
+  color: aliceblue;
+  white-space: nowrap;
+}
+
+.figmaLink, .figmaLink:visited {
+  color:aqua;
+  text-decoration: none;
+}
+.figmaLink:hover {
+  color:rgb(17, 141, 141);
+  text-decoration: underline;
+}
+
+
+h2 {
+  font-family: 'Avenir-Black';
+  color: aliceblue;
+}
+
+h3 {
+  font-family: 'Avenir-Black';
+  color: aliceblue;
+}
+
+hr {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  margin: 0;
+  opacity: 0.4;
+}
+
+.apropos {
+  position: absolute;
+  left: 27.3%;
+  top: 38%;
+  font-family: 'Avenir-Black';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 400%;
+  z-index: 1;
+  color: aliceblue;
+}
+
+.apropos-p {
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  max-width: 40%;
+  text-align: justify;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid aliceblue 2px;
+  border-radius: 5% 5% 5% 5% / 9% 9% 9% 9%;
+  padding: 1.5%;
+
+}
+
+.game video {
+  position: absolute;
+  left: 48%;
+  top: 46%;
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+.pourquoi {
+  position: absolute;
+  left: 73.4%;
+  top: 105%;
+  font-family: 'Avenir-Black';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 400%;
+  z-index: 1;
+  color: aliceblue;
+  white-space: nowrap;
+}
+
+.p1 {
+  position: absolute;
+  right: 7%;
+  top: 118%;
+  max-width: 40%;
+  text-align: justify;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid aliceblue 3px;
+  border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+  padding: 1.5%;
+}
+
+.point video {
+  position: absolute;
+  left: -4%;
+  top: 100%;
+  width: 60%;
+  height: auto;
+  display: block;
+  z-index: -1;
+}
+
+.ligne video {
+  position: absolute;
+  left: 0%;
+  top: 170%;
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.7;
+  z-index: -3;
+}
+
+.fondu1_l {
+  position: absolute;
+  top: 155%;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+.fondu2_l {
+  position: absolute;
+  top: 195%;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+
+.citation {
+  position: absolute;
+  left: 16%;
+  top: 157%;
+  width: 70%;
+  height: auto;
+  display: block;
+  opacity: 0.6;
+  z-index: 4;
+}
+
+.but {
+  position: absolute;
+  text-align: center;  
+  left: 11%;
+  top: 210%;
+  z-index: 4;
+  width: 80%;
+  font-size: 350%;
+}
+
+.etape {
+  position: absolute;
+  left: 50%;
+  top: 285%;
+  font-family: 'ARCADECLASSIC';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 900%;
+  z-index: 1;
+  color: aliceblue;
+  white-space: nowrap;
+}
+
+.e1i {
+  position: absolute;
+  left: 26%;
+  top: 312%;
+  font-family: 'Avenir-Black';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: aliceblue;
+  white-space: nowrap;
+}
+
+.e1 {
+  position: absolute;
+  left: 5%;
+  top: 325%;
+  max-width: 40%;
+  text-align: justify;
+  border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+  overflow: hidden;
+  border: solid aliceblue 3px;
+  padding: 1.5%;
+}
+
+.chercher video {
+  position: absolute;
+  left: 49%;
+  top: 315%;
+  width: 45%;
+  height: auto;
+  opacity: 1;
+}
+
+.e2i {
+  position: absolute;
+  left: 75.2%;
+  top: 374%;
+  font-family: 'Avenir-Black';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: aliceblue;
+  white-space: nowrap;
+}
+
+.e2 {
+  position: absolute;
+  right: 5%;
+  top: 386%;
+  max-width: 40%;
+  text-align: justify;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid aliceblue 3px;
+  padding: 1.5%;
+  padding-left: 2%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.slider-container {
+  width: 48%;
+  position: absolute;
+  top: 384%;
+  left: 3.5%;
+  height: 68%;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+/* ? Ajouter un absolute avec % pour les points */
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #ccc;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+
+.menu label:hover,
+.menu label:focus {
+  background: #501cc9;
+}
+
+.slide-input {
+  opacity: 0;
+}
+
+.slide-img {
+  border: solid aliceblue 3px;
+  border-radius: 10px;
+  width: 800%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left 0s 0.75s;
+
+}
+
+[id^="slide"]:checked+.slide-img {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease;
+}
+
+.t1 {
+  top: 167.6%;
+}
+
+.t2 {
+  top: 281.2%;
+}
+
+.t3 {
+  top: 35%;
+}
+
+.t4 {
+  top: 305%;
+  z-index: 6;
+}
+
+.arche {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  top: 475%;
+  z-index: 0;
+  padding: 0;
+}
+
+#rainbowbg video {
+  position: absolute;
+  left: -50%;
+  top: 480%;
+  width: 150%;
+  height: 200vh;
+  object-fit: cover;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+
+.arche2 {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  top: 585%;
+  z-index: 0;
+  padding: 0;
+
+  rotate: 180deg;
+}
+
+#ml {
+  position: absolute;
+  left: 50%;
+  top: 500%;
+  font-family: 'ARCADECLASSIC';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 900%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+/* ----------- */
+
+.membre1 {
+  position: absolute;
+  top: 530%;
+  left: 3%;
+  display: flex;
+  width: 45%;
+  height: 105%;
+  border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  content: '';
+  background-color: #0c0c0c;
+  opacity: 0.5;
+  border: solid aliceblue 5px;
+  box-shadow: black 3px 3px 10px 3px;
+  z-index: 1;
+} 
+
+.nom1 {
+  position: absolute;
+  left: 26%;
+  top: 532%;
+  font-family: 'ARCADECLASSIC';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 900%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+.pseudo1 {
+  position: absolute;
+  left: 25%;
+  top: 545%;
+  font-family: 'Avenir-Black';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 150%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.presentation1 {
+  position: absolute;
+  left: 25%;
+  top: 552%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 150%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.contact1 {
+  position: absolute;
+  left: 12%;
+  top: 564%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 300%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+.mail1 {
+  position: absolute;
+  left: 27%;
+  top: 574%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 150%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.mailimg1 {
+  position: absolute;
+  width: 3%;
+  left: 6%;
+  top: 573%;
+}
+
+.tel1 {
+  position: absolute;
+  left: 27.54%;
+  top: 581%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 150%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.telimg1 {
+  position: absolute;
+  width: 2.4%;
+  left: 6.3%;
+  top: 581%;
+}
+
+.contact2 {
+  position: absolute;
+  left: 17.7%;
+  top: 590%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 300%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+.githubLink1 {
+  position: absolute;
+  left: 15%;
+  top: 601%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.github1 {
+  position: absolute;
+  width: 5%;
+  left: 6%;
+  top: 599%;
+}
+
+.igLink1 {
+  position: absolute;
+  left: 16.1%;
+  top: 612%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.instagram1 {
+  position: absolute;
+  width: 5%;
+  left: 6%;
+  top: 610%;
+}
+
+.ytLink1 {
+  position: absolute;
+  left: 15.3%;
+  top: 623%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.youtube1 {
+  position: absolute;
+  width: 5%;
+  left: 6%;
+  top: 621%;
+}
+
+.xLink1 {
+  position: absolute;
+  left: 36.3%;
+  top: 601%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.x1 {
+  position: absolute;
+  width: 5%;
+  left: 26%;
+  top: 599%;
+}
+
+.discordsLink1 {
+  position: absolute;
+  left: 38%;
+  top: 612%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.discords1 {
+  position: absolute;
+  width: 5%;
+  left: 26%;
+  top: 610%;
+}
+
+.discorduLink1 {
+  position: absolute;
+  left: 35%;
+  top: 623.3%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.discordu1 {
+  position: absolute;
+  width: 5%;
+  left: 26%;
+  top: 621%;
+}
+
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+
+.membre2 {
+  position: absolute;
+  top: 530%;
+  right: 3%;
+  display: flex;
+  width: 45%;
+  height: 105%;
+  border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  content: '';
+  background-color: #0c0c0c;
+  opacity: 0.5;
+  border: solid aliceblue 5px;
+  box-shadow: black 3px 3px 10px 3px;
+  z-index: -1;
+} 
+
+.nom2 {
+  position: absolute;
+  left: 75%;
+  top: 532%;
+  font-family: 'ARCADECLASSIC';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 900%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.pseudo2 {
+  position: absolute;
+  left: 75%;
+  top: 545%;
+  font-family: 'Avenir-Black';
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 150%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.presentation2 {
+  position: absolute;
+  left: 75%;
+  top: 552%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 150%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.contact3 {
+  position: absolute;
+  left: 62%;
+  top: 564%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 300%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+.mail2 {
+  position: absolute;
+  left: 77%;
+  top: 574%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 150%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.mailimg2 {
+  position: absolute;
+  width: 3%;
+  left: 56%;
+  top: 573%;
+}
+
+.tel2 {
+  position: absolute;
+  left: 77.1%;
+  top: 581%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 150%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.telimg2 {
+  position: absolute;
+  width: 2.4%;
+  left: 56.3%;
+  top: 581%;
+}
+
+.contact4 {
+  position: absolute;
+  left: 67.7%;
+  top: 590%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 300%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+.githubLink2 {
+  position: absolute;
+  left: 65%;
+  top: 601%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.github2 {
+  position: absolute;
+  width: 5%;
+  left: 56%;
+  top: 599%;
+}
+
+.igLink2 {
+  position: absolute;
+  left: 66.1%;
+  top: 612%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.instagram2 {
+  position: absolute;
+  width: 5%;
+  left: 56%;
+  top: 610%;
+}
+
+.ytLink2 {
+  position: absolute;
+  left: 65.3%;
+  top: 623%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.youtube2 {
+  position: absolute;
+  width: 5%;
+  left: 56%;
+  top: 621%;
+}
+
+.xLink2 {
+  position: absolute;
+  left: 86.3%;
+  top: 601%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.x2 {
+  position: absolute;
+  width: 5%;
+  left: 76%;
+  top: 599%;
+}
+
+.discordsLink2 {
+  position: absolute;
+  left: 88%;
+  top: 612%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.discords2 {
+  position: absolute;
+  width: 5%;
+  left: 76%;
+  top: 610%;
+}
+
+.discorduLink2 {
+  position: absolute;
+  left: 85%;
+  top: 623.3%;
+  font-family: 'Avenir-Black';
+  text-align: justify;
+  transform: translateX(-50%);
+  font-size: 200%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+.discordu2 {
+  position: absolute;
+  width: 5%;
+  left: 76%;
+  top: 621%;
+}
+
+.launch {
+  position: absolute;
+  left: 32%;
+  top: 644%;
+
+  font-family: 'Avenir-Black';
+  font-size: 250%;
+  text-align: center;
+}
+.finish {
+  position: absolute;
+  left: 35.5%;
+  top: 652%;
+
+  font-family: 'Avenir-Black';
+  font-size: 250%;
+  text-align: center;
+}

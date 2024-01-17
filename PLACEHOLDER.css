@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('./fonts/AvenirBlack.ttf');
+}
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('./fonts/AvenirHeavy.ttf');
+}
+
+@keyframes backgroundPositionAnimation {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+
+
+body {
+    background-color: black;
+    background-size: 1500%;
+    animation: backgroundPositionAnimation 90s infinite ease;
+    background-image: linear-gradient(
+    45deg,
+    #f739e7,
+    #f73982,
+    #f73939, 
+    #f75a33,
+    #ff9e43,
+    #f0d22b,
+    #f0ff20,
+    #b9ff15,
+    #92ff15,
+    #33f319,
+    #20ff84,
+    #16ffd8,
+    #11b5e7);
+}
+
+.warn {
+    width: 10%;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+.error {
+    font-family: 'Avenir-Black';
+    font-size: 60px;
+
+    position: absolute;
+    top: 35%;
+    left: 44%;
+}
+.reason {
+    font-family: 'Avenir-Heavy';
+    font-size: 35px;
+
+    position: absolute;
+    top: 50%;
+    left: 24.8%;
+}
+
+.button, .button:visited {
+    font-family: 'Avenir-Heavy';
+    width: 18em;
+    height: 3em;
+    margin: 0em;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: solid rgb(0, 0, 0) 4px;
+    border-radius: 5%, 5%, 5%, 5% / 10%, 10%, 10%, 10%;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 68%;
+    left: 34.5%;
+    z-index: 1;
+    overflow: hidden;
+   }
+
+   button:hover {
+    background-color: black;
+    color: aliceblue;
+    border: solid aliceblue 4px;
+   }
+
+   button:after {
+    content: "";
+    color: aliceblue (60, 60, 60);
+    background: transparent;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+ 
